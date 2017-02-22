@@ -1,4 +1,4 @@
-// init Isotope
+// init Isotope http://isotope.metafizzy.co/
 var $grid = $('.grid').isotope({
   // options
 });
