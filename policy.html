@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Original source code: https://tympanus.net/codrops/2014/01/07/shape-hover-effect-with-svg/
+		<meta name="description" content="Hover Effects with animated SVG Shapes using Snap.svg"/>
+		<meta name="author" content="Codrops"/> -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Title-->
+		<title>Aleah Howell Portfolio</title>
+		<!--Favicon-->
+		<!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
+		<!--Fonts-->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Slabo+27px" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--css-->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+		<link rel="stylesheet" type="text/css" href="css/component.css"/>
+		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	</head>
+
+<body>
+<div class="container">
+
+	<!-- Top Navigation -->
+	<nav>
+		<div class="row padding2">
+			<div class="col-lg-6 col-md-6 col-sm-6">
+			<a class="brand" href="">Aleah Howell</a>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6" id="home">
+				<a href=""><span class="fa fa-home" aria-hidden="true" class="icon"></span>Back To Home</a>
+			</div>
+		</div>
+	</nav>
+
+	<div>
+		<div class="row">
+			<div class="col-lg-8 col-md-8 col-sm-12">
+				<img src="img/policy1.png" class="img-responsive">
+				<p class="live">View It Live <a href="http://aleahhowell.com/educational-slider/" target="blank">aleahhowell.com/educational-slider/</a></h4>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-12 project">
+				<p class="title">Educational Slider</h4>
+				<p class="description"><b>Challenge: </b>Create an educational and informative interactive that explains a common question, issue or concept. This click through graphic uses multimedia to teach a lesson and finish with a game or quiz that test comprehension of the concept. I chose to create a timeline that educates the audience on campus sexual assault policy.</p>
+				<p class="description"><b>Tools: </b>HTML, CSS, JavaScript, jQuery</p>
+			</div>
+		</div>
+	</div>
+
+  <footer class="footer">
+    <div id="footer">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 padding">
+          <p>© Aleah Howell 2017</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 padding">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 padding footer-icons">
+          <p>
+          <a href="mailto:aleahhowelldesign@gmail.com" class="icon" target="blank"><span class="fa fa-envelope-o" aria-hidden="true"></span></a>
+          <a href="https://github.com/aahowell" class="icon" target="blank"><span class="fa fa-github" aria-hidden="true"></span></a>
+          <a href="https://www.linkedin.com/in/aleahhowell" class="icon" target="blank"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+          <a href="https://www.instagram.com/amhowell/?hl=en" class="icon" target="blank"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+          <a href="https://twitter.com/AleahHowell12" class="icon" target="blank"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+          <a href="https://www.pinterest.com/aahowell/" class="icon" target="blank"><span class="fa fa-pinterest" aria-hidden="true"></span></a>
+          </p>
+      	</div>
+    	</div>
+		</div>
+  </footer>
+
+</div> <!-- container -->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/snap.svg-min.js"></script>
+<script src="js/isotope-docs.min.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+  (function() {
+
+    function init() {
+      var speed = 250,
+        easing = mina.easeinout;
+
+      [].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+        var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+          pathConfig = {
+            from : path.attr( 'd' ),
+            to : el.getAttribute( 'data-path-hover' )
+          };
+
+        el.addEventListener( 'mouseenter', function() {
+          path.animate( { 'path' : pathConfig.to }, speed, easing );
+        } );
+
+        el.addEventListener( 'mouseleave', function() {
+          path.animate( { 'path' : pathConfig.from }, speed, easing );
+        } );
+      } );
+    }
+
+    init();
+
+  })();
+</script>
+</body>
+</html>

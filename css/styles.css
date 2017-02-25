@@ -1,47 +1,3 @@
-.title {
-  font-family: 'lato';
-  text-transform: uppercase;
-  color: teal;
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.live {
-  text-align: center;
-  font-family: 'lato';
-  text-transform: uppercase;
-  color: black;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.live a {
-  font-family: 'lato';
-  color: teal;
-  font-size: 20px;
-  font-weight: 500;
-  border-bottom: 1px solid;
-  text-decoration: none;
-}
-
-.project {
-  padding-top: 10px;
-}
-
-.project a {
-  font-family: 'lato';
-  color: teal;
-  font-size: 18px;
-  font-weight: lighter;
-  border-bottom: 1px solid;
-  text-decoration: none;
-}
-
-.description {
-  font-size: 16px;
-  font-weight: 300;
-}
-
 .codrops-demos button {
   border: solid black 1px;
   color: black;
@@ -59,6 +15,11 @@
   padding-left: 10%;
 }
 
+.description {
+  font-size: 16px;
+  font-weight: 300;
+}
+
 button:focus {
   background-color: teal;
   border-color: teal;
@@ -67,6 +28,11 @@ button:focus {
 
 button {
   color: black;
+}
+
+#fdasmall {
+  width: 95%;
+  margin: auto;
 }
 
 .filter-style {
@@ -162,26 +128,6 @@ header p {
   color: #F2B21C;
 }
 
-.icon {
-  color: teal;
-  padding-left: 5px;
-  text-decoration: none;
-}
-
-nav {
-  padding-bottom: 4em;
-}
-
-nav .brand {
-  color: black;
-  font-size: 36px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-  letter-spacing: 3px;
-  margin-left: -10px;
-  text-decoration: none;
-}
-
 #home {
   text-align: right;
   padding-top: 20px;
@@ -218,7 +164,80 @@ nav .brand {
   text-decoration: none;
 }
 
+.icon {
+  color: teal;
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+iframe {
+  padding-top: 15px;
+}
+
+.live {
+  text-align: center;
+  font-family: 'lato';
+  text-transform: uppercase;
+  color: black;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.live a {
+  font-family: 'lato';
+  color: teal;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+nav {
+  padding-bottom: 4em;
+}
+
+nav .brand {
+  color: black;
+  font-size: 36px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-left: -10px;
+  text-decoration: none;
+}
+
 .padding2 {
   border-bottom: 1px solid rgba(0, 0, 0, .2);
   padding-top: 4em;
+}
+
+.padding3 {
+  padding-top: 2em;
+}
+
+.project {
+  padding-top: 10px;
+}
+
+.project a {
+  font-family: 'lato';
+  color: teal;
+  font-size: 18px;
+  font-weight: lighter;
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+#rebuildsmall {
+  width: 60%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.title {
+  font-family: 'lato';
+  text-transform: uppercase;
+  color: teal;
+  font-size: 17px;
+  font-weight: 500;
 }
